@@ -3,7 +3,7 @@ Summary:	Date-Calc perl module
 Summary(pl):	Modu³ perla Date-Calc
 Name:		perl-Date-Calc
 Version:	5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -47,5 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_sitearch}/auto/Date/Calc
 %{perl_sitearch}/auto/Date/Calc/Calc.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Date/Calc/Calc.so
-%{_mandir}/man3/*
+%{_mandir}/man3/Date*
 %{_examplesdir}/%{name}-%{version}
