@@ -4,6 +4,9 @@
 #        But tests will fail then.
 # TODO:  Inform author about the namespace conflict with perl-Bit-Vector.
 #
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Date
 %define		pnam	Calc
@@ -129,7 +132,7 @@ DIN 1355 och, i viss mån, ISO 8601 (där den är tillämplig).
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-#%%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
