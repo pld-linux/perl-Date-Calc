@@ -7,11 +7,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Date
 %define		pnam	Calc
-Summary:	Date::Calc - Gregorian calendar date calculations.
-Summary(pl):	Date::Calc - oblicza daty na podstawie kalendarza gregoriañskiego.
+Summary:	Date::Calc - Gregorian calendar date calculations
+Summary(pl):	Modu³ Date::Calc - obliczaj±cy daty na podstawie kalendarza gregoriañskiego
 Name:		perl-Date-Calc
 Version:	5.1
-Release:	1
+Release:	2
 License:	GPL/LGPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,12 +23,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package consists of a C library and a Perl module (which uses the
 C library, internally) for all kinds of date calculations based on the
-Gregorian calendar (the one used in all western countries today), thereby
-complying with all relevant norms and standards: S<ISO/R 2015-1971>,
-S<DIN 1355> and, to some extent, S<ISO 8601> (where applicable).
+Gregorian calendar (the one used in all western countries today),
+thereby complying with all relevant norms and standards:
+ISO/R 2015-1971, DIN 1355 and, to some extent, ISO 8601 (where
+applicable).
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten pakiet zawiera bibliotekê C i modu³ Perla (u¿ywaj±cy wewnêtrznie
+tej biblioteki) do wszystkich rodzajów obliczeñ na datach bazuj±cych
+na kalendarzu gregoriañskim (u¿ywanym we wszystkich zachodnich
+pañstwach), zgodnie z normami i standardami: ISO/R 2015-1971, DIN 1355
+i, do pewnego stopnia, ISO 8601.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
