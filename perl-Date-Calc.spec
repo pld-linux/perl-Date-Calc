@@ -11,13 +11,13 @@ Summary:	Date::Calc - Gregorian calendar date calculations
 Summary(pl):	Modu³ Date::Calc - obliczaj±cy daty na podstawie kalendarza gregoriañskiego
 Name:		perl-Date-Calc
 Version:	5.3
-Release:	1
+Release:	2
 License:	GPL/LGPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-Bit-Vector >= 5.7
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -39,7 +39,8 @@ i, do pewnego stopnia, ISO 8601.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 #%%{!?_without_tests:%{__make} test}
@@ -61,15 +62,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.txt
-%dir %{perl_sitearch}/Date
-%{perl_sitearch}/Date/*.pm
-%dir %{perl_sitearch}/Date/Calc
-%{perl_sitearch}/Date/Calc/*.pm
-%dir %{perl_sitearch}/Date/Calendar
-%{perl_sitearch}/Date/Calendar/*.pm
-%dir %{perl_sitearch}/auto/Date
-%dir %{perl_sitearch}/auto/Date/Calc
-%{perl_sitearch}/auto/Date/Calc/Calc.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Date/Calc/Calc.so
+%dir %{perl_vendorarch}/Date
+%{perl_vendorarch}/Date/*.pm
+%dir %{perl_vendorarch}/Date/Calc
+%{perl_vendorarch}/Date/Calc/*.pm
+%dir %{perl_vendorarch}/Date/Calendar
+%{perl_vendorarch}/Date/Calendar/*.pm
+%dir %{perl_vendorarch}/auto/Date
+%dir %{perl_vendorarch}/auto/Date/Calc
+%{perl_vendorarch}/auto/Date/Calc/Calc.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Date/Calc/Calc.so
 %{_mandir}/man3/Date*
 %{_examplesdir}/%{name}-%{version}
