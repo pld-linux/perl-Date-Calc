@@ -10,8 +10,8 @@
 Summary:	Date::Calc - Gregorian calendar date calculations
 Summary(pl):	Modu³ Date::Calc - obliczaj±cy daty na podstawie kalendarza gregoriañskiego
 Name:		perl-Date-Calc
-Version:	5.1
-Release:	2
+Version:	5.2
+Release:	1
 License:	GPL/LGPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -41,6 +41,8 @@ i, do pewnego stopnia, ISO 8601.
 %build
 perl Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
+
+#%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
