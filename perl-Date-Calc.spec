@@ -1,6 +1,6 @@
 #
 # TODO:  Tests should be enabled.
-# FIXME: Removing of Carp::Clan shoud happen in %prep.
+# FIXME: Removing of Carp::Clan shoud happen in %%prep.
 #        But tests will fail then.
 # TODO:  Inform author about the namespace conflict with perl-Bit-Vector.
 #
@@ -27,13 +27,13 @@ Summary(tr):	Date::Calc - Perl'de geniþletilmiþ ve etkili tarih hesaplamalarý iç
 Summary(zh_CN):	Date::Calc - ÓÃÓÚ Perl ÖÐÀ©Õ¹µÄºÍÓÐÐ§µÄÈÕÆÚ¼ÆËãµÄÄ£¿é¡£
 Summary(zh_TW):	Date::Calc - ¥Î©ó Perl ¤¤©µ¦ù»P¦³®Ä²v¤§¸ê®Æ­pºâªº¤@­Ó¼Ò²Õ¡C
 Name:		perl-Date-Calc
-Version:	5.3
-Release:	4
+Version:	5.4
+Release:	1
 # same as perl (C library also LGPL)
 License:	GPL v1+ or Artistic (C library also LGPL)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0548d1238b026920986c27956524a5d5
+# Source0-md5:	7ae34972694127e8f1c9a2af1c24585b
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Bit-Vector >= 5.7
 BuildRequires:	rpm-perlprov >= 4.1-13
