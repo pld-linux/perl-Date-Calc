@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Date
 %define	pnam	Calc
-%include	/usr/lib/rpm/macros.perl
 Summary:	Date-Calc perl module
 Summary(pl):	Modu³ perla Date-Calc
 Name:		perl-Date-Calc
 Version:	5.0
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +20,7 @@ Date-Calc - Gregorian calendar date calculations.
 Date-Calc - oblicza daty na podstawie kalendarza gregoriañskiego.
 
 %prep
-%setup -q -n Date-Calc-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
