@@ -26,7 +26,8 @@ Summary(zh_TW):	Date::Calc - 用於 Perl 中延伸與有效率之資料計算的一個模組。
 Name:		perl-Date-Calc
 Version:	5.3
 Release:	3
-License:	GPL/LGPL or Artistic
+# same as perl (C library also LGPL)
+License:	GPL v1+ or Artistic (C library also LGPL)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0548d1238b026920986c27956524a5d5
