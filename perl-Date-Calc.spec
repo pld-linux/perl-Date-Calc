@@ -1,26 +1,17 @@
+#
+# TODO:  Tests should be enabled.
+# FIXME: Removing of Carp::Clan shoud happen in %prep.
+#        But tests will fail then.
+# TODO:  Inform author about the namespace conflict with perl-Bit-Vector.
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Date
 %define		pnam	Calc
-Summary:	Date::Calc Perl module
-Summary(cs):	Modul Date::Calc pro Perl
-Summary(da):	Perlmodul Date::Calc
-Summary(de):	Date::Calc Perl Modul
-Summary(es):	Módulo de Perl Date::Calc
-Summary(fr):	Module Perl Date::Calc
-Summary(it):	Modulo di Perl Date::Calc
-Summary(ja):	Date::Calc Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Date::Calc ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Date::Calc
-Summary(pl):	Modu³ Perla Date::Calc
-Summary(pt):	Módulo de Perl Date::Calc
-Summary(pt_BR):	Módulo Perl Date::Calc
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Date::Calc
-Summary(sv):	Date::Calc Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Date::Calc
-Summary(zh_CN):	Date::Calc Perl Ä£¿é
+Summary:	Date::Calc - Gregorian calendar date calculations.
+Summary(pl):	Date::Calc - oblicza daty na podstawie kalendarza gregoriañskiego.
 Name:		perl-Date-Calc
-Version:	5.0
-Release:	10
+Version:	5.1
+Release:	1
 License:	GPL/LGPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -30,10 +21,14 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Date::Calc - Gregorian calendar date calculations.
+This package consists of a C library and a Perl module (which uses the
+C library, internally) for all kinds of date calculations based on the
+Gregorian calendar (the one used in all western countries today), thereby
+complying with all relevant norms and standards: S<ISO/R 2015-1971>,
+S<DIN 1355> and, to some extent, S<ISO 8601> (where applicable).
 
-%description -l pl
-Date::Calc - oblicza daty na podstawie kalendarza gregoriañskiego.
+# %description -l pl
+# TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
