@@ -1,11 +1,26 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Date
-%define	pnam	Calc
-Summary:	Date::Calc perl module
-Summary(pl):	Modu³ perla Date::Calc
+%define		pdir	Date
+%define		pnam	Calc
+Summary:	Date::Calc Perl module
+Summary(cs):	Modul Date::Calc pro Perl
+Summary(da):	Perlmodul Date::Calc
+Summary(de):	Date::Calc Perl Modul
+Summary(es):	Módulo de Perl Date::Calc
+Summary(fr):	Module Perl Date::Calc
+Summary(it):	Modulo di Perl Date::Calc
+Summary(ja):	Date::Calc Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Date::Calc ÆŞ ¸ğÁÙ
+Summary(no):	Perlmodul Date::Calc
+Summary(pl):	Modu³ Perla Date::Calc
+Summary(pt):	Módulo de Perl Date::Calc
+Summary(pt_BR):	Módulo Perl Date::Calc
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Date::Calc
+Summary(sv):	Date::Calc Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Date::Calc
+Summary(zh_CN):	Date::Calc Perl Ä£¿é
 Name:		perl-Date-Calc
 Version:	5.0
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
