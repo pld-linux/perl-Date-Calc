@@ -42,7 +42,7 @@ i, do pewnego stopnia, ISO 8601.
 %{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-#%{!?_without_tests:%{__make} test}
+#%%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
