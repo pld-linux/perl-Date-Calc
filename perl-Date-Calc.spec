@@ -25,7 +25,7 @@ Summary(zh_CN):	Date::Calc - 用于 Perl 中扩展的和有效的日期计算的模块。
 Summary(zh_TW):	Date::Calc - ノ Perl い┑籔Τ瞯ぇ戈璸衡家舱
 Name:		perl-Date-Calc
 Version:	5.3
-Release:	2
+Release:	3
 License:	GPL/LGPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
