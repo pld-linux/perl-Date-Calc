@@ -8,8 +8,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Date
-%define		pnam	Calc
+%define	pdir	Date
+%define	pnam	Calc
 Summary:	Date::Calc - Gregorian calendar date calculations
 Summary(cs):	Date::Calc - modul pro roz¹íøené a efektivní poèítání s datem v Perlu
 Summary(da):	Date::Calc - et modul for udvidet og effektiv datoberegning i Perl
