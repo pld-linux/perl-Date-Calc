@@ -3,7 +3,7 @@ Summary:	Date-Calc perl module
 Summary(pl):	Modu³ perla Date-Calc
 Name:		perl-Date-Calc
 Version:	4.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
