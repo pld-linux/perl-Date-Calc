@@ -35,7 +35,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-cp -a tools $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{verison}
+cp -a tools $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 gzip -9nf *txt
 
@@ -50,4 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitearch}/auto/Date/Calc/Calc.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Date/Calc/Calc.so
 %{_mandir}/man3/*
-%{_examplesdir}/%{name}-%{versopn}
+%{_examplesdir}/%{name}-%{version}
