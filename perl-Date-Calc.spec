@@ -5,7 +5,7 @@ Summary:	Date::Calc perl module
 Summary(pl):	Modu³ perla Date::Calc
 Name:		perl-Date-Calc
 Version:	5.0
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -47,9 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitearch}/Date/Calc/*.pm
 %dir %{perl_sitearch}/Date/Calendar
 %{perl_sitearch}/Date/Calendar/*.pm
-%{perl_sitearch}/Carp/Clan.pm
 %dir %{perl_sitearch}/auto/Date/Calc
 %{perl_sitearch}/auto/Date/Calc/Calc.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Date/Calc/Calc.so
-%{_mandir}/man3/*
+%{_mandir}/man3/Date*
 %{_examplesdir}/%{name}-%{version}
