@@ -20,8 +20,8 @@ Summary(uk):	Модуль для Perl Date::Calc
 Summary(zh_CN):	Date::Calc Perl дё©И
 Name:		perl-Date-Calc
 Version:	5.0
-Release:	9
-License:	GPL
+Release:	10
+License:	GPL/LGPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
@@ -51,17 +51,21 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a tools $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
+rm -f GNU_{,L}GPL.txt Artistic.txt
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc *.txt
+%dir %{perl_sitearch}/Date
 %{perl_sitearch}/Date/*.pm
 %dir %{perl_sitearch}/Date/Calc
 %{perl_sitearch}/Date/Calc/*.pm
 %dir %{perl_sitearch}/Date/Calendar
 %{perl_sitearch}/Date/Calendar/*.pm
+%dir %{perl_sitearch}/auto/Date
 %dir %{perl_sitearch}/auto/Date/Calc
 %{perl_sitearch}/auto/Date/Calc/Calc.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Date/Calc/Calc.so
