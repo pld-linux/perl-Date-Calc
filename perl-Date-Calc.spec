@@ -2,9 +2,9 @@
 Summary:	Date-Calc perl module
 Summary(pl):	Modu³ perla Date-Calc
 Name:		perl-Date-Calc
-Version:	4.2
-Release:	3
-Copyright:	GPL
+Version:	4.3
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Date/Date-Calc-%{version}.tar.gz
@@ -29,11 +29,11 @@ make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}
 make install DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
-cp -a tools 	   $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}
+cp -a tools 	   $RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/Date/Calc/*.so
 
@@ -61,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-/usr/src/examples/%{name}-%{version}
+/usr/src/examples/%{name}
