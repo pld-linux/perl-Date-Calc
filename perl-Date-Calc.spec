@@ -5,12 +5,13 @@ Summary:	Date::Calc perl module
 Summary(pl):	Modu³ perla Date::Calc
 Name:		perl-Date-Calc
 Version:	5.0
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6.1
+BuildRequires:	perl-Bit-Vector >= 5.7
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,18 +36,20 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a tools $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-gzip -9nf *txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%{perl_sitearch}/Date/Calc.pm
+%doc *.txt
+%{perl_sitearch}/Date/*.pm
+%dir %{perl_sitearch}/Date/Calc
+%{perl_sitearch}/Date/Calc/*.pm
+%dir %{perl_sitearch}/Date/Calendar
+%{perl_sitearch}/Date/Calendar/*.pm
 %{perl_sitearch}/Carp/Clan.pm
 %dir %{perl_sitearch}/auto/Date/Calc
 %{perl_sitearch}/auto/Date/Calc/Calc.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Date/Calc/Calc.so
-%{_mandir}/man3/Date*
+%{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
