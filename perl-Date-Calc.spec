@@ -11,21 +11,21 @@
 %define		pdir	Date
 %define		pnam	Calc
 Summary:	Date::Calc - Gregorian calendar date calculations
-Summary(cs):	Date::Calc - modul pro roz¹íøené a efektivní poèítání s datem v Perlu
-Summary(da):	Date::Calc - et modul for udvidet og effektiv datoberegning i Perl
-Summary(de):	Date::Calc - ein Modul für erweiterte und leistungsstarke Datenberechnungen in Perl
-Summary(es):	Date::Calc - módulo para los cálculos de datos extendidos y eficientes en Perl
-Summary(fr):	Date::Calc - module de calcul de date étendu et efficace dans Perl
-Summary(it):	Date::Calc - modulo per gestire in modo completo ed efficiente i calcoli delle date in Perl
-Summary(ja):	Date::Calc - PerlÆâ¤Î³ÈÄ¥·¿¤Ç¸úÎ¨Åª¤ÊÆüÉÕ»»½Ğ¤Î°Ù¤Î¥â¥¸¥å¡¼¥ë¡£
-Summary(ko):	Date::Calc - PerlÀ» »ç¿ëÇÏ¿© È®ÀåµÇ°í È¿À²ÀûÀ¸·Î ³¯Â¥¸¦ °è»êÇÏ´Âµ¥ »ç¿ëµÇ´Â ¸ğµâ
-Summary(pl):	Date::Calc - obliczanie daty na podstawie kalendarza gregoriañskiego
-Summary(pt):	Date::Calc - um módulo para o cálculo eficiente e extendido de datas em Perl
-Summary(pt_BR):	Date::Calc - um módulo para o cálculo eficiente e extendido de datas em Perl
-Summary(sv):	Date::Calc - en modul för utökade och effektiva datumberäkningar i Perl
-Summary(tr):	Date::Calc - Perl'de genişletilmiş ve etkili tarih hesaplamaları için bir modül
-Summary(zh_CN):	Date::Calc - ÓÃÓÚ Perl ÖĞÀ©Õ¹µÄºÍÓĞĞ§µÄÈÕÆÚ¼ÆËãµÄÄ£¿é¡£
-Summary(zh_TW):	Date::Calc - ¥Î©ó Perl ¤¤©µ¦ù»P¦³®Ä²v¤§¸ê®Æ­pºâªº¤@­Ó¼Ò²Õ¡C
+Summary(cs.UTF-8):   Date::Calc - modul pro rozÅ¡Ã­Å™enÃ© a efektivnÃ­ poÄÃ­tÃ¡nÃ­ s datem v Perlu
+Summary(da.UTF-8):   Date::Calc - et modul for udvidet og effektiv datoberegning i Perl
+Summary(de.UTF-8):   Date::Calc - ein Modul fÃ¼r erweiterte und leistungsstarke Datenberechnungen in Perl
+Summary(es.UTF-8):   Date::Calc - mÃ³dulo para los cÃ¡lculos de datos extendidos y eficientes en Perl
+Summary(fr.UTF-8):   Date::Calc - module de calcul de date Ã©tendu et efficace dans Perl
+Summary(it.UTF-8):   Date::Calc - modulo per gestire in modo completo ed efficiente i calcoli delle date in Perl
+Summary(ja.UTF-8):   Date::Calc - Perlå†…ã®æ‹¡å¼µå‹ã§åŠ¹ç‡çš„ãªæ—¥ä»˜ç®—å‡ºã®ç‚ºã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã€‚
+Summary(ko.UTF-8):   Date::Calc - Perlì„ ì‚¬ìš©í•˜ì—¬ í™•ì¥ë˜ê³  íš¨ìœ¨ì ìœ¼ë¡œ ë‚ ì§œë¥¼ ê³„ì‚°í•˜ëŠ”ë° ì‚¬ìš©ë˜ëŠ” ëª¨ë“ˆ
+Summary(pl.UTF-8):   Date::Calc - obliczanie daty na podstawie kalendarza gregoriaÅ„skiego
+Summary(pt.UTF-8):   Date::Calc - um mÃ³dulo para o cÃ¡lculo eficiente e extendido de datas em Perl
+Summary(pt_BR.UTF-8):   Date::Calc - um mÃ³dulo para o cÃ¡lculo eficiente e extendido de datas em Perl
+Summary(sv.UTF-8):   Date::Calc - en modul fÃ¶r utÃ¶kade och effektiva datumberÃ¤kningar i Perl
+Summary(tr.UTF-8):   Date::Calc - Perl'de geniÅŸletilmiÅŸ ve etkili tarih hesaplamalarÄ± iÃ§in bir modÃ¼l
+Summary(zh_CN.UTF-8):   Date::Calc - ç”¨äº Perl ä¸­æ‰©å±•çš„å’Œæœ‰æ•ˆçš„æ—¥æœŸè®¡ç®—çš„æ¨¡å—ã€‚
+Summary(zh_TW.UTF-8):   Date::Calc - ç”¨æ–¼ Perl ä¸­å»¶ä¼¸èˆ‡æœ‰æ•ˆç‡ä¹‹è³‡æ–™è¨ˆç®—çš„ä¸€å€‹æ¨¡çµ„ã€‚
 Name:		perl-Date-Calc
 Version:	5.4
 Release:	2
@@ -46,83 +46,83 @@ Gregorian calendar (the one used in all western countries today),
 thereby complying with all relevant norms and standards: ISO/R
 2015-1971, DIN 1355 and, to some extent, ISO 8601 (where applicable).
 
-%description -l cs
-Tato knihovna poskytuje rùzné typy poèítání s datem zalo¾ené na
-gregoriánském kalendáøi (pou¾ívaném nyní ve v¹ech západních zemích),
-èím¾ vyhovuje v¹em relevantním normám a standardùm: ISO/R 2015-1971,
-DIN 1355 a do urèité míry ISO 8601 (kde to dává smysl).
+%description -l cs.UTF-8
+Tato knihovna poskytuje rÅ¯znÃ© typy poÄÃ­tÃ¡nÃ­ s datem zaloÅ¾enÃ© na
+gregoriÃ¡nskÃ©m kalendÃ¡Å™i (pouÅ¾Ã­vanÃ©m nynÃ­ ve vÅ¡ech zÃ¡padnÃ­ch zemÃ­ch),
+ÄÃ­mÅ¾ vyhovuje vÅ¡em relevantnÃ­m normÃ¡m a standardÅ¯m: ISO/R 2015-1971,
+DIN 1355 a do urÄitÃ© mÃ­ry ISO 8601 (kde to dÃ¡vÃ¡ smysl).
 
-%description -l da
-Biblioteket laver alle slags datoberegninger baseret på den
+%description -l da.UTF-8
+Biblioteket laver alle slags datoberegninger baseret pÃ¥ den
 gregorianske kalender (den som bruges i alle vestlige lande i dag), og
-følger derved alle relevante normer og standarder: ISO/R 2015-1971,
-DIN 1355 og, i nogen udstrækning, ISO 8601 (hvis relevant).
+fÃ¸lger derved alle relevante normer og standarder: ISO/R 2015-1971,
+DIN 1355 og, i nogen udstrÃ¦kning, ISO 8601 (hvis relevant).
 
-%description -l de
+%description -l de.UTF-8
 Die Bibliothek liefert jede Art der Datenberechnung auf der Grundlage
-des gregorianischen Kalenders (der heute in allen westlichen Ländern
+des gregorianischen Kalenders (der heute in allen westlichen LÃ¤ndern
 verwendet wird) und entspricht damit allen relevanten Richtlinien und
-Standards: ISO/R 2015-1971, DIN 1355 und, in gewissem Maße, ISO 8601
-(wo gültig).
+Standards: ISO/R 2015-1971, DIN 1355 und, in gewissem MaÃŸe, ISO 8601
+(wo gÃ¼ltig).
 
-%description -l es
-La librería proporciona todos los tipos de cálculos de datos basados
-en el calendario gregoriano (usado en todos los países del oeste hoy
-en día), que cumple todas las normas y estándare relevantes: ISO/R
+%description -l es.UTF-8
+La librerÃ­a proporciona todos los tipos de cÃ¡lculos de datos basados
+en el calendario gregoriano (usado en todos los paÃ­ses del oeste hoy
+en dÃ­a), que cumple todas las normas y estÃ¡ndare relevantes: ISO/R
 2015-1971, DIN 1355 and, to some extent, ISO 8601 (en los casos en los
 que se pueda aplicar).
 
-%description -l fr
-La bibliothèque fournit toutes sortes de calculs de dates basés sur le
-calendrier grégorien (celui qu'utilisent aujourd'hui tous les pays
-européens). Il est donc adapté à toutes les normes et tous les
+%description -l fr.UTF-8
+La bibliothÃ¨que fournit toutes sortes de calculs de dates basÃ©s sur le
+calendrier grÃ©gorien (celui qu'utilisent aujourd'hui tous les pays
+europÃ©ens). Il est donc adaptÃ© Ã  toutes les normes et tous les
 standards: ISO/R 2015-1971, DIN 1355 et dans une certaine mesure ISO
 8601 (lorsqu'elle est applicable).
 
-%description -l it
+%description -l it.UTF-8
 La libreria fornisce ogni sorta di calcolo delle date basandosi sul
 calendario Gregoriano (utilizzato in tutti i paesi occidentali), in
-conformità con le norme e gli standard più appropriati: ISO/R
+conformitÃ  con le norme e gli standard piÃ¹ appropriati: ISO/R
 2015-1971, DIN 1355 e, anche ISO 8601 (se applicabile).
 
-%description -l ko
-ÀÌ ¶óÀÌºê·¯¸®´Â (ÇöÀç ¼­¾ç¿¡¼­ »ç¿ëµÇ´Â) ±×·¹°í¸®¿À·Â¿¡ ±â¹İÇÑ ¸ğµç
-Á¾·ùÀÇ ³¯Â¥ °è»ê¹ıÀ» Á¦°øÇÕ´Ï´Ù. µû¶ó¼­ ´ÙÀ½°ú °°Àº ¸ğµç Çü½Ä°ú Ç¥ÁØÀ»
-ÁØ¼öÇÕ´Ï´Ù: ISO/R, 2015-1971, DIN 1355, ±×¸®°í ISO 8601 (Àû¿ë °¡´ÉÇÑ
-°æ¿ì).
+%description -l ko.UTF-8
+ì´ ë¼ì´ë¸ŒëŸ¬ë¦¬ëŠ” (í˜„ì¬ ì„œì–‘ì—ì„œ ì‚¬ìš©ë˜ëŠ”) ê·¸ë ˆê³ ë¦¬ì˜¤ë ¥ì— ê¸°ë°˜í•œ ëª¨ë“ 
+ì¢…ë¥˜ì˜ ë‚ ì§œ ê³„ì‚°ë²•ì„ ì œê³µí•©ë‹ˆë‹¤. ë”°ë¼ì„œ ë‹¤ìŒê³¼ ê°™ì€ ëª¨ë“  í˜•ì‹ê³¼ í‘œì¤€ì„
+ì¤€ìˆ˜í•©ë‹ˆë‹¤: ISO/R, 2015-1971, DIN 1355, ê·¸ë¦¬ê³  ISO 8601 (ì ìš© ê°€ëŠ¥í•œ
+ê²½ìš°).
 
-%description -l pl
-Ten pakiet zawiera bibliotekê C i modu³ Perla (u¿ywaj±cy wewnêtrznie
-tej biblioteki) do wszystkich rodzajów obliczeñ na datach bazuj±cych
-na kalendarzu gregoriañskim (u¿ywanym we wszystkich zachodnich
-pañstwach), zgodnie z normami i standardami: ISO/R 2015-1971, DIN 1355
+%description -l pl.UTF-8
+Ten pakiet zawiera bibliotekÄ™ C i moduÅ‚ Perla (uÅ¼ywajÄ…cy wewnÄ™trznie
+tej biblioteki) do wszystkich rodzajÃ³w obliczeÅ„ na datach bazujÄ…cych
+na kalendarzu gregoriaÅ„skim (uÅ¼ywanym we wszystkich zachodnich
+paÅ„stwach), zgodnie z normami i standardami: ISO/R 2015-1971, DIN 1355
 i, do pewnego stopnia, ISO 8601.
 
-%description -l pt
-A biblioteca oferece todo o tipo de cálculos de data com base no
-calendário Gregoriano (o que é usado em todos os países ocidentais nos
+%description -l pt.UTF-8
+A biblioteca oferece todo o tipo de cÃ¡lculos de data com base no
+calendÃ¡rio Gregoriano (o que Ã© usado em todos os paÃ­ses ocidentais nos
 dias de hoje), estando desta forma em conformidade com todas as
-normas: a ISO/R 2015-1971, a DIN 1355 e, a certo nível, a ISO 8601
-(onde for aplicável).
+normas: a ISO/R 2015-1971, a DIN 1355 e, a certo nÃ­vel, a ISO 8601
+(onde for aplicÃ¡vel).
 
-%description -l pt_BR
-A biblioteca oferece todo o tipo de cálculos de data com base no
-calendário Gregoriano (o que é usado em todos os países ocidentais nos
+%description -l pt_BR.UTF-8
+A biblioteca oferece todo o tipo de cÃ¡lculos de data com base no
+calendÃ¡rio Gregoriano (o que Ã© usado em todos os paÃ­ses ocidentais nos
 dias de hoje), estando desta forma em conformidade com todas as
-normas: a ISO/R 2015-1971, a DIN 1355 e, a certo nível, a ISO 8601
-(onde for aplicável).
+normas: a ISO/R 2015-1971, a DIN 1355 e, a certo nÃ­vel, a ISO 8601
+(onde for aplicÃ¡vel).
 
-%description -l sv
-Biblioteket klarar alla sorters datumberäkningar baserade på den
-gregorianska kalendern (den som används i alla västländer idag), och
-följer därvid alla relavanta normer och standarder: ISO/R 2015-1971,
-DIN 1355 och, i viss mån, ISO 8601 (där den är tillämplig).
+%description -l sv.UTF-8
+Biblioteket klarar alla sorters datumberÃ¤kningar baserade pÃ¥ den
+gregorianska kalendern (den som anvÃ¤nds i alla vÃ¤stlÃ¤nder idag), och
+fÃ¶ljer dÃ¤rvid alla relavanta normer och standarder: ISO/R 2015-1971,
+DIN 1355 och, i viss mÃ¥n, ISO 8601 (dÃ¤r den Ã¤r tillÃ¤mplig).
 
-%description -l zh_CN
-¸Ã¿âÌá¹©ÁË¸÷Àà½¨Á¢ÔÚ¸ñÁĞ¸ßÀïÈÕÀú(¹«Àú)ÉÏµÄ
-ÈÕÆÚ¼ÆËã¡£Ëü·ûºÏËùÓĞÏà¹ØµÄ±ê×¼£ºISO/R
-2015-1971¡¢DIN 1355 ºÍÄ³ÖÖ³Ì¶ÈÉÏµÄ ISO 8601
-(ÈôÊÊÓÃ)¡£
+%description -l zh_CN.UTF-8
+è¯¥åº“æä¾›äº†å„ç±»å»ºç«‹åœ¨æ ¼åˆ—é«˜é‡Œæ—¥å†(å…¬å†)ä¸Šçš„
+æ—¥æœŸè®¡ç®—ã€‚å®ƒç¬¦åˆæ‰€æœ‰ç›¸å…³çš„æ ‡å‡†ï¼šISO/R
+2015-1971ã€DIN 1355 å’ŒæŸç§ç¨‹åº¦ä¸Šçš„ ISO 8601
+(è‹¥é€‚ç”¨)ã€‚
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
