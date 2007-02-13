@@ -11,21 +11,21 @@
 %define		pdir	Date
 %define		pnam	Calc
 Summary:	Date::Calc - Gregorian calendar date calculations
-Summary(cs.UTF-8):   Date::Calc - modul pro rozšířené a efektivní počítání s datem v Perlu
-Summary(da.UTF-8):   Date::Calc - et modul for udvidet og effektiv datoberegning i Perl
-Summary(de.UTF-8):   Date::Calc - ein Modul für erweiterte und leistungsstarke Datenberechnungen in Perl
-Summary(es.UTF-8):   Date::Calc - módulo para los cálculos de datos extendidos y eficientes en Perl
-Summary(fr.UTF-8):   Date::Calc - module de calcul de date étendu et efficace dans Perl
-Summary(it.UTF-8):   Date::Calc - modulo per gestire in modo completo ed efficiente i calcoli delle date in Perl
-Summary(ja.UTF-8):   Date::Calc - Perl内の拡張型で効率的な日付算出の為のモジュール。
-Summary(ko.UTF-8):   Date::Calc - Perl을 사용하여 확장되고 효율적으로 날짜를 계산하는데 사용되는 모듈
-Summary(pl.UTF-8):   Date::Calc - obliczanie daty na podstawie kalendarza gregoriańskiego
-Summary(pt.UTF-8):   Date::Calc - um módulo para o cálculo eficiente e extendido de datas em Perl
-Summary(pt_BR.UTF-8):   Date::Calc - um módulo para o cálculo eficiente e extendido de datas em Perl
-Summary(sv.UTF-8):   Date::Calc - en modul för utökade och effektiva datumberäkningar i Perl
-Summary(tr.UTF-8):   Date::Calc - Perl'de genişletilmiş ve etkili tarih hesaplamaları için bir modül
-Summary(zh_CN.UTF-8):   Date::Calc - 用于 Perl 中扩展的和有效的日期计算的模块。
-Summary(zh_TW.UTF-8):   Date::Calc - 用於 Perl 中延伸與有效率之資料計算的一個模組。
+Summary(cs.UTF-8):	Date::Calc - modul pro rozšířené a efektivní počítání s datem v Perlu
+Summary(da.UTF-8):	Date::Calc - et modul for udvidet og effektiv datoberegning i Perl
+Summary(de.UTF-8):	Date::Calc - ein Modul für erweiterte und leistungsstarke Datenberechnungen in Perl
+Summary(es.UTF-8):	Date::Calc - módulo para los cálculos de datos extendidos y eficientes en Perl
+Summary(fr.UTF-8):	Date::Calc - module de calcul de date étendu et efficace dans Perl
+Summary(it.UTF-8):	Date::Calc - modulo per gestire in modo completo ed efficiente i calcoli delle date in Perl
+Summary(ja.UTF-8):	Date::Calc - Perl内の拡張型で効率的な日付算出の為のモジュール。
+Summary(ko.UTF-8):	Date::Calc - Perl을 사용하여 확장되고 효율적으로 날짜를 계산하는데 사용되는 모듈
+Summary(pl.UTF-8):	Date::Calc - obliczanie daty na podstawie kalendarza gregoriańskiego
+Summary(pt.UTF-8):	Date::Calc - um módulo para o cálculo eficiente e extendido de datas em Perl
+Summary(pt_BR.UTF-8):	Date::Calc - um módulo para o cálculo eficiente e extendido de datas em Perl
+Summary(sv.UTF-8):	Date::Calc - en modul för utökade och effektiva datumberäkningar i Perl
+Summary(tr.UTF-8):	Date::Calc - Perl'de genişletilmiş ve etkili tarih hesaplamaları için bir modül
+Summary(zh_CN.UTF-8):	Date::Calc - 用于 Perl 中扩展的和有效的日期计算的模块。
+Summary(zh_TW.UTF-8):	Date::Calc - 用於 Perl 中延伸與有效率之資料計算的一個模組。
 Name:		perl-Date-Calc
 Version:	5.4
 Release:	2
