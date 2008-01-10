@@ -131,6 +131,7 @@ DIN 1355 och, i viss mån, ISO 8601 (där den är tillämplig).
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
