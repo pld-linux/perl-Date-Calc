@@ -32,8 +32,9 @@ Release:	4
 # same as perl (C library also LGPL)
 License:	GPL v1+ or Artistic (C library also LGPL)
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Date/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7ae34972694127e8f1c9a2af1c24585b
+URL:		http://search.cpan.org/dist/Date-Calc/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Bit-Vector >= 5.7
 BuildRequires:	rpm-perlprov >= 4.1-13
