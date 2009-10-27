@@ -27,17 +27,21 @@ Summary(tr.UTF-8):	Date::Calc - Perl'de genişletilmiş ve etkili tarih hesaplam
 Summary(zh_CN.UTF-8):	Date::Calc - 用于 Perl 中扩展的和有效的日期计算的模块。
 Summary(zh_TW.UTF-8):	Date::Calc - 用於 Perl 中延伸與有效率之資料計算的一個模組。
 Name:		perl-Date-Calc
-Version:	6.0
+Version:	6.2
 Release:	1
 # same as perl (C library also LGPL)
 License:	GPL v1+ or Artistic (C library also LGPL)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Date/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f1ed6a6800f74cb7f3dab9f91d160ca8
+# Source0-md5:	30dcf4c06c5d35466ee2b9956d2c4b4c
 URL:		http://search.cpan.org/dist/Date-Calc/
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-Bit-Vector >= 5.7
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-Bit-Vector >= 7.1
+BuildRequires:	perl-Carp-Clan >= 5.3
+%endif
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -131,23 +135,15 @@ DIN 1355 och, i viss mån, ISO 8601 (där den är tillämplig).
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} \
-	CC="%{__cc}" \
-	OPTIMIZE="%{rpmcflags}"
+%{__make}
 
 %{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-cp -a tools $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-
-rm -f GNU_{,L}GPL.txt Artistic.txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -155,15 +151,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.txt
-%dir %{perl_vendorarch}/Date
-%{perl_vendorarch}/Date/*.pm
-%dir %{perl_vendorarch}/Date/Calc
-%{perl_vendorarch}/Date/Calc/*.pm
-%dir %{perl_vendorarch}/Date/Calendar
-%{perl_vendorarch}/Date/Calendar/*.pm
-%dir %{perl_vendorarch}/auto/Date
-%dir %{perl_vendorarch}/auto/Date/Calc
-%{perl_vendorarch}/auto/Date/Calc/Calc.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/Date/Calc/Calc.so
-%{_mandir}/man3/Date*
-%{_examplesdir}/%{name}-%{version}
+%dir %{perl_vendorlib}/Date
+%{perl_vendorlib}/Date/*.pm
+%dir %{perl_vendorlib}/Date/Calc
+%{perl_vendorlib}/Date/Calc/*.pm
+%dir %{perl_vendorlib}/Date/Calendar
+%{perl_vendorlib}/Date/Calendar/*.pm
+%{_mandir}/man3/*
