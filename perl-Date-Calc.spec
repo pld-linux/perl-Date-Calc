@@ -27,13 +27,13 @@ Summary(tr.UTF-8):	Date::Calc - Perl'de genişletilmiş ve etkili tarih hesaplam
 Summary(zh_CN.UTF-8):	Date::Calc - 用于 Perl 中扩展的和有效的日期计算的模块。
 Summary(zh_TW.UTF-8):	Date::Calc - 用於 Perl 中延伸與有效率之資料計算的一個模組。
 Name:		perl-Date-Calc
-Version:	6.2
+Version:	6.3
 Release:	1
 # same as perl (C library also LGPL)
 License:	GPL v1+ or Artistic (C library also LGPL)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Date/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	30dcf4c06c5d35466ee2b9956d2c4b4c
+# Source0-md5:	9b64555b7051c1beb6b61daead2d01b3
 URL:		http://search.cpan.org/dist/Date-Calc/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
