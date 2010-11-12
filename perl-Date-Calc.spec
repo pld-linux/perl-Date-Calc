@@ -28,7 +28,7 @@ Summary(zh_CN.UTF-8):	Date::Calc - 用于 Perl 中扩展的和有效的日期计
 Summary(zh_TW.UTF-8):	Date::Calc - 用於 Perl 中延伸與有效率之資料計算的一個模組。
 Name:		perl-Date-Calc
 Version:	6.3
-Release:	1
+Release:	2
 # same as perl (C library also LGPL)
 License:	GPL v1+ or Artistic (C library also LGPL)
 Group:		Development/Languages/Perl
